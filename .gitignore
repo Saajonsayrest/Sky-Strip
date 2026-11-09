@@ -1,0 +1,41 @@
+# The original app and its decompiled code are research material. They stay
+# on this computer and never go into Git.
+/apk/
+/evidence/
+/notes/
+/work/
+
+# Keys and signing files.
+*.jks
+*.keystore
+*.p12
+*.pem
+*.mobileprovision
+key.properties
+local.properties
+google-services.json
+GoogleService-Info.plist
+.env*
+*.apk
+*.apks
+*.xapk
+*.aab
+*.ipa
+*.dex
+
+# Firebase: every clone uses its own project.
+firebase_options.dart
+firebase.json
+.firebaserc
+.firebase/
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
+serviceAccount*.json
+*-adminsdk-*.json
+
+# Private work notes.
+/.ai-brain/
+/.claude/
+
+.DS_Store

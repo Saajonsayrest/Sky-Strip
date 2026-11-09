@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Left column and place name open the app, the diagram switches the time span.
+     The tap areas get their real widths from WideWidget on Android 12 and later. -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/image_light"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/widget_description"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/image_dark"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/widget_description"
+        android:scaleType="fitXY"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/tap_open"
+            android:layout_width="96dp"
+            android:layout_height="match_parent" />
+
+        <FrameLayout
+            android:id="@+id/tap_toggle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/widget_toggle" />
+
+        <FrameLayout
+            android:id="@+id/tap_open_end"
+            android:layout_width="24dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</FrameLayout>

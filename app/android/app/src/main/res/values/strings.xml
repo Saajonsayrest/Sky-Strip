@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="widget_wide">Sky Strip</string>
+    <string name="widget_wide_description">Hourly weather picture. Tap it to switch short, medium or long time span</string>
+    <string name="widget_description">Weather forecast</string>
+    <string name="widget_toggle">Switch time span</string>
+</resources>

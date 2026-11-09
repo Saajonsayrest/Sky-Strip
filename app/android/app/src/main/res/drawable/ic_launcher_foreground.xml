@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A smiling cloud with a little sun behind it. Everything sits inside the 66 dp centre safe
+     zone. work/icon/make_icon.py draws the same shapes for the PNG icons; keep them in step. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Sun glow and sun. -->
+    <path
+        android:fillColor="#4DFFFFFF"
+        android:pathData="M53,39a15,15 0,1 1,30 0a15,15 0,1 1,-30 0" />
+    <path
+        android:fillColor="#FFFFD54A"
+        android:pathData="M56,39a12,12 0,1 1,24 0a12,12 0,1 1,-24 0" />
+    <!-- Soft shadow under the cloud. -->
+    <group android:translateY="2.5">
+        <path
+            android:fillColor="#401A4F9C"
+            android:pathData="M31,55a11,11 0,1 1,22 0a11,11 0,1 1,-22 0 M42,47a14,14 0,1 1,28 0a14,14 0,1 1,-28 0 M58,56a10,10 0,1 1,20 0a10,10 0,1 1,-20 0 M39,52H69A9,9 0,0 1,78 61A9,9 0,0 1,69 70H39A9,9 0,0 1,30 61A9,9 0,0 1,39 52Z" />
+    </group>
+    <!-- Cloud. -->
+    <path android:pathData="M31,55a11,11 0,1 1,22 0a11,11 0,1 1,-22 0 M42,47a14,14 0,1 1,28 0a14,14 0,1 1,-28 0 M58,56a10,10 0,1 1,20 0a10,10 0,1 1,-20 0 M39,52H69A9,9 0,0 1,78 61A9,9 0,0 1,69 70H39A9,9 0,0 1,30 61A9,9 0,0 1,39 52Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="0" android:startY="33"
+                android:endX="0" android:endY="70"
+                android:startColor="#FFFFFFFF"
+                android:endColor="#FFE3F0FF"
+                android:type="linear" />
+        </aapt:attr>
+    </path>
+    <!-- Cheeks. -->
+    <path
+        android:fillColor="#AAFF8FAB"
+        android:pathData="M41.5,61.5a3,1.8 0,1 0,6 0a3,1.8 0,1 0,-6 0 M60.5,61.5a3,1.8 0,1 0,6 0a3,1.8 0,1 0,-6 0" />
+    <!-- Eyes with a tiny shine. -->
+    <path
+        android:fillColor="#FF33405C"
+        android:pathData="M46.5,57a2,2.6 0,1 0,4 0a2,2.6 0,1 0,-4 0 M57.5,57a2,2.6 0,1 0,4 0a2,2.6 0,1 0,-4 0" />
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M48.5,56a0.7,0.7 0,1 0,1.4 0a0.7,0.7 0,1 0,-1.4 0 M59.5,56a0.7,0.7 0,1 0,1.4 0a0.7,0.7 0,1 0,-1.4 0" />
+    <!-- Smile. -->
+    <path
+        android:pathData="M51.5,61Q54,63.8 56.5,61"
+        android:strokeColor="#FF33405C"
+        android:strokeWidth="1.6"
+        android:strokeLineCap="round" />
+</vector>
